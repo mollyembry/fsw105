@@ -1,23 +1,24 @@
 var shopper = {
-     name:"Grocery_Castle",
-     groceryCart:["Bread","Lettuce","Apples","Icecream"],
-     apples:7,
-     isThereCoupons: true,
-     drinkBrand:"gatorade",
-     drinkFlavor:"fruit punch",
-     fullDrink : function(){
+     name: "GroceryCastle",
+     groceryCart: ["Bread","Lettuce","Apples","Icecream"],
+     drinkBrand: "gatorade",
+     drinkFlavor: "fruit punch",
+     fullDrink: function() {
          return this.drinkBrand + " " + this.drinkFlavor;
-     },
-      storeAddress: {
+     }
+    }
+      var storeAddress = {
          street: "5678 grocery lane",
          city: "Riverside",
-         state: "CA",
+         state:"CA",
          fullAddress: function() {
              return this.street + " " + this.city;
          }
-        }
      }
+
      
- console.log(shopper);
-console.log("fullAddress.displayInfo");
-console.log("fullDrink.displayinfo");
+     
+
+ 
+ console.log(shopper.fullDrink())
+ console.log(storeAddress.fullAddress())
